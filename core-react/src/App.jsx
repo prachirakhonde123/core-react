@@ -1,11 +1,15 @@
-import Counter from "./Counter"
+import BgChanger from "./Components/Bgchanger"
+import PasswordGenerator from "./Components/PasswordGenerator"
+import '../src/index.css'
+
 function App() {
 
   return (
-    <>
-      <h1>Chai Aur React with Vite</h1>
-      <Counter/>
-    </>
+    <div>
+       {/* <BgChanger/> */}
+       <PasswordGenerator/>
+    </div>
+    // <h1>Chai Aur React with Vite</h1>
   )
 }
 
