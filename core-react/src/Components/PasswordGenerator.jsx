@@ -25,9 +25,10 @@ export default function PasswordGenerator(){
     return (
         <>
           <div className="w-full max-w-lg mx-auto text-center shadow-md rounded-lg px-4 py-3 my-8 text-orange-500 bg-gray-800">
-            <h1 className="text-white text-center">Password Generator</h1>
+            <h1 className="text-white text-center mb-2">Password Generator</h1>
             <div className="flex shadow rounded-lg overflow-hidden mb-4">
-               <input type="text" className="outline-none w-full py-1 px-6 bg-white" value={password} placeholder="password" readOnly />
+               <input type="text" className="outline-none w-full py-2 px-6 bg-white text-center" value={password} placeholder="Password" readOnly />
+               <button className="px-2 py-2 bg-blue">Copy</button>
             </div>
           </div>
         </>
