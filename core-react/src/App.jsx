@@ -1,7 +1,13 @@
+import BgChanger from "./Components/Bgchanger"
+import '../src/index.css'
+
 function App() {
 
   return (
-    <h1>Chai Aur React with Vite</h1>
+    <div>
+       <BgChanger/>
+    </div>
+    // <h1>Chai Aur React with Vite</h1>
   )
 }
 
