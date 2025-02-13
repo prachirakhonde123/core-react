@@ -1,3 +1,4 @@
+import { useId } from "react";
 
 function InputBox({
     label,
@@ -11,13 +12,15 @@ function InputBox({
     className = "",
 }) {
 
+    const amoutInputId = useId() // Used for optimization
     return (
         <div className={`bg-white p-3 rounded-lg text-sm flex `}>
             <div className="w-1/2">
-                <label className="text-black/40 mb-2 inline-block">
+                <label htmlFor={amoutInputId} className="text-black/40 mb-2 inline-block">
                     {label}
                 </label>
                 <input
+                    id={amoutInputId}
                     className="outline-none w-full bg-transparent py-1.5"
                     type="number" 
                     value={amount} 
@@ -31,12 +34,18 @@ function InputBox({
                 <select
                     className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
                     value={selectCurrency}
-                    onChange={(e) => onCurrencyChange(e.target.value)}
+                    onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
+                    disabled = {currencyDisable}
                 >
-
-                    <option value="usd">
+                    {currenyOption.map((currency)=>(
+                        <option key={currency} value={currency}>
+                             {currency}
+                        </option>
+                      )    
+                    )}
+                    {/* <option value={currenyOption}>
                         usd
-                    </option>
+                    </option> */}
 
                 </select>
             </div>
