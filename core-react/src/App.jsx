@@ -1,5 +1,5 @@
-import BgChanger from "./Components/Bgchanger"
-import PasswordGenerator from "./Components/PasswordGenerator"
+// import BgChanger from "./Components/Bgchanger"
+// import PasswordGenerator from "./Components/PasswordGenerator"
 import CurrencyConverter from "./Components/CurrencyConverter"
 import '../src/index.css'
 

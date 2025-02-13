@@ -45,7 +45,7 @@ export default function CurrencyConverter() {
                                 label="From"
                                 amount={amount}
                                 currenyOption={options}
-                                onCurrencyChange={(currency)=>setAmount(amount)}
+                                onCurrencyChange={(currency)=>setFrom(currency)}
                                 selectCurrency={from}
                                 onAmountChange={(amount)=>setAmount(amount)}
                             />
@@ -65,7 +65,7 @@ export default function CurrencyConverter() {
                                 amount={convertedAmount}
                                 currenyOption={options}
                                 onCurrencyChange={(currency)=>setTo(currency)}
-                                selectCurrency={from}
+                                selectCurrency={to}
                                 amountDisable
                             />
                         </div>
