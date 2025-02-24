@@ -1,13 +1,15 @@
 // import BgChanger from "./Components/Bgchanger"
 // import PasswordGenerator from "./Components/PasswordGenerator"
-import CurrencyConverter from "./Components/CurrencyConverter"
+// import CurrencyConverter from "./Components/CurrencyConverter"
+import Layout from './Layout'
 import '../src/index.css'
 
 function App() {
 
   return (
     <div>
-      <CurrencyConverter/>
+      <Layout />
+      {/* <CurrencyConverter/> */}
        {/* <BgChanger/> */}
        {/* <PasswordGenerator/> */}
     </div>

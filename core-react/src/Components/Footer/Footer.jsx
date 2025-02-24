@@ -1,4 +1,5 @@
-import {Link,NavLink} from 'react-router-dom'
+/* eslint-disable react/no-unknown-property */
+import {Link} from 'react-router-dom'
 
 export default function Footer() {
     return (
